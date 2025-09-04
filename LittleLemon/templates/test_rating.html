@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Rating Form</title>
+</head>
+<body>
+    <h2>Submit Rating</h2>
+    <form method="post" action="/api/ratings/">
+        {% csrf_token %}
+        <p>
+            <label>User:</label>
+            <input type="text" name="user" required>
+        </p>
+        <p>
+            <label>Menu Item:</label>
+            <input type="text" name="menu_item" required>
+        </p>
+        <p>
+            <label>Rating:</label>
+            <select name="rating">
+                <option value="1">1 Star</option>
+                <option value="2">2 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="5">5 Stars</option>
+            </select>
+        </p>
+        <button type="submit">Submit Rating</button>
+    </form>
+</body>
+</html>

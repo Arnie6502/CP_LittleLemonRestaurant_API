@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Lemon Restaurant API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .endpoints {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .endpoint {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #4CAF50;
+        }
+        code {
+            background-color: #e8e8e8;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🍋 Little Lemon Restaurant API</h1>
+        <p>Welcome to our RESTful API service</p>
+    </div>
+
+    <div class="endpoints">
+        <h2>Available Endpoints</h2>
+        
+        <div class="endpoint">
+            <strong>API Root:</strong> <code>GET /api/</code><br>
+            <small>Main API information</small>
+        </div>
+
+        <div class="endpoint">
+            <strong>User Registration:</strong> <code>POST /api/users/</code><br>
+            <small>Create a new user account</small>
+        </div>
+
+        <div class="endpoint">
+            <strong>Login:</strong> <code>POST /auth/token/login/</code><br>
+            <small>Get authentication token</small>
+        </div>
+
+        <div class="endpoint">
+            <strong>User Profile:</strong> <code>GET /api/users/me/</code><br>
+            <small>Get current user profile (requires token)</small>
+        </div>
+
+        <div class="endpoint">
+            <strong>Categories:</strong> <code>GET /api/categories/</code><br>
+            <small>List all food categories</small>
+        </div>
+
+        <div class="endpoint">
+            <strong>Menu Items:</strong> <code>GET /api/menu-items/</code><br>
+            <small>List all menu items</small>
+        </div>
+
+        <div class="endpoint">
+            <strong>Ratings:</strong> <code>GET/POST /api/ratings/</code><br>
+            <small>View or create ratings</small>
+        </div>
+    </div>
+
+    <div class="endpoints">
+        <h2>Quick Test</h2>
+        <p>Try these endpoints in your browser:</p>
+        <ul>
+            <li><a href="/api/" target="_blank">API Root</a></li>
+            <li><a href="/api/categories/" target="_blank">Categories</a></li>
+            <li><a href="/api/menu-items/" target="_blank">Menu Items</a></li>
+            <li><a href="/api/ratings/" target="_blank">Ratings</a></li>
+            <li><a href="/admin/" target="_blank">Admin Panel</a></li>
+        </ul>
+    </div>
+</body>
+</html>
